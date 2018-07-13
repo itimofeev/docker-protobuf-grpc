@@ -1,10 +1,10 @@
-FROM golang:1.9.3
+FROM golang:1.10.3
 
 
 ADD . /src
 WORKDIR /src
 
-ENV PROTOBUF_TAG v3.5.1
+ENV PROTOBUF_TAG v3.6.0
 
 RUN ./build.sh
 
